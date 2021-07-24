@@ -399,36 +399,12 @@ html {
 </head>
 <body>
 	<%
-//Verifica se o usuário está autenticado
-//HttpSession sessao = request.getSession();
-//String usuarioAutenticado = null;
 
-//try{
-//	usuarioAutenticado = (String) sessao.getAttribute("cliente");
-//	if (usuarioAutenticado.equals(null)){
-//		response.sendRedirect("CompraControlador?operacao=login");
-//	}
-//}catch(Exception e){
-//	response.sendRedirect("CompraControlador?operacao=login");
-//}
-//DaoProduto dao65 = new DaoProduto();
-//List<Produto> listaP = new ArrayList<Produto>();
-
-//String nomePesquisa = "";
-//nomePesquisa = request.getParameter("pesquisa");
-
-//if(nomePesquisa == null){
-//	listaP = dao65.select();	
-//}else{
-//	listaP = dao65.selectNome(nomePesquisa);
-//}
 DaoProduto dao = new DaoProduto();
 
 List<Produto> listaProduto = dao.select();
 List<Produto> listaCateg = dao.select();
 
-//DaoCategoria dao32 = new DaoCategoria();
-//List<Categoria> listaCateg = dao32.select();
 %>
 	<header>
 		<nav class="navbar navbar-expand-sm  navbar-light bg-light ">
@@ -450,7 +426,7 @@ List<Produto> listaCateg = dao.select();
 							</div>
 							<div class="col-6,6 " style="margin-left: 5px" >
 
-								<h3>onde você</h3>
+								<h3>onde vocÃª</h3>
 							</div>
 							<div class="col-11 te" style="margin-left: 405px">
 
@@ -490,7 +466,7 @@ List<Produto> listaCateg = dao.select();
 			<li><a
 				href="telas/Filtros/servicoLimpeza.jsp?Limpeza=Limpeza">Limpeza</a></li>
 			<li><a 
-				href="telas/Filtros/servicoHigiene.jsp?Saude=Saude">Saúde</a></li>
+				href="telas/Filtros/servicoHigiene.jsp?Saude=Saude">SaÃºde</a></li>
 		</ul>
 	</nav>
 	<div class="overlay"></div>
